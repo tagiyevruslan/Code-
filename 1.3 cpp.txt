@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int kvd(int a){
+    return a * a;
+}
+
+int kub(int a){
+    return a * kvd(a);
+}
+
+int main(){
+    int a;
+    cout << "Ededi daxil edin: ";
+    cin >> a;
+    cout << kvd(a) << endl << kub(a);
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int bin(int a){
+    int s = 0, p = 1;
+    while(a > 0){
+        s += (a % 2) * p;
+        a /= 2;
+        p *= 10;
+    }
+    return s;
+}
+
+int main(){
+    int a;
+    cout << "Eded daxil edin: ";
+    cin >> a;
+    cout << bin(a);
+    return 0;
+}
